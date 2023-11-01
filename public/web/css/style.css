@@ -1,0 +1,2079 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&display=swap");
+
+:root {
+    --main-color: #0f1464;
+    --black-color: #192126;
+    --gray-color: #19212650;
+    --main-font-family: "Assistant", sans-serif;
+}
+
+body {
+    font-family: var(--main-font-family);
+}
+
+.logo {
+    height: 80px;
+    padding: 40px;
+    margin-bottom: 10px;
+}
+.logo img{
+    width: 70%;
+}
+
+.main-button {
+    width: 160px;
+    height: 38px;
+    background: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.navigation {
+    width: 100%;
+    height: 70px;
+    border-radius: 15px 15px 0px 0px;
+    background: #f6f6f6;
+    box-shadow: 0px 8px 15px 5px rgba(0, 0, 0, 0.23);
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0px 35px;
+}
+.navigation .navIcon {
+    position: relative;
+}
+.navigation .navIcon .messages-number {
+    text-decoration: none;
+    position: absolute;
+    background: #900;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 13px;
+    color: #fff;
+    top: -3px;
+    left: 23px;
+}
+.search .input-group-text {
+    height: 38px;
+    border: none;
+    background: none;
+}
+
+.search .form-control {
+    border: none;
+    background: #f5f5f5;
+}
+
+.search .form-control:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.search .input-group {
+    padding: 1px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+}
+
+.search {
+    position: relative;
+}
+
+.search-result {
+    position: absolute;
+    background: #f5f5f5;
+    width: 100%;
+    padding: 10px 20px;
+    color: #000;
+    top: 40px;
+    max-height: 400px;
+    overflow: scroll;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.search-result ul {
+    list-style-type: none;
+}
+
+.search-result ul li {
+    margin: 5px 0;
+}
+
+.search-result ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.swiper {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 46px !important;
+}
+
+.swiper-wrapper {
+    height: auto !important;
+}
+
+.swiper .swiper-slide {
+    width: 237px !important;
+    height: 260px;
+}
+
+/* Start First Onboarding Page */
+.onboarding-page,
+.welcome-page {
+    width: 100%;
+    /* height: 100vh; */
+    text-align: center;
+}
+
+.welcome-page h2 {
+    margin: 50px 10px 10px;
+}
+
+.onboarding-page .splash {
+    background: var(--main-color);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.onboarding-page .splash .logo {
+    padding-top: 50%;
+}
+
+.onboarding-page .splash .page-footer {
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+}
+
+.onboarding-page .splash .page-footer h3 {
+    text-align: center;
+}
+
+.onboarding-page .main .content {
+    text-align: center;
+    position: relative;
+}
+
+.onboarding-page .main .content img {
+    padding: 50px 0px;
+}
+
+.onboarding-page .main .content h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.onboarding-page .main .content p {
+    color: var(--gray-color);
+    font-family: var(--main-font-family);
+}
+
+.onboarding-page .main .footer a {
+    display: block;
+    margin: 15px;
+    position: absolute;
+    width: -webkit-fill-available;
+    bottom: 20px;
+}
+
+/* End First Onboarding Page */
+/* Start Welcome Page */
+.welcome-page .main .content h2 {
+    text-align: center;
+    font-weight: 900;
+}
+
+.welcome-page .main .content p {
+    color: #7c7c7c;
+}
+
+.welcome-page .main .content img {
+    margin: 25px auto;
+}
+
+.welcome-page .main .footer .main-button {
+    display: block;
+    margin: 15px;
+    width: -webkit-fill-available;
+}
+
+.welcome-page .main .footer .sub-button {
+    display: block;
+    padding: 15px 20px;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    margin: 0 15px;
+    margin-top: -35px;
+}
+
+.welcome-page .main .footer .sub-button span {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+/* End Welcome Page */
+/* Start Auth Page */
+.auth-page .main {
+    padding: 35px;
+}
+
+.auth-page h2 {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.auth-page label {
+    color: #7c7c7c;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.auth-page .form-control {
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-radius: 0;
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+
+.auth-page .form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.auth-page .form-group {
+    position: relative;
+}
+
+.auth-page .form-group span {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    color: #c0bcbc;
+}
+
+.auth-page .main-button {
+    position: relative;
+    left: 30%;
+    width: 160px;
+    font-size: 16px;
+}
+
+.login-page form .main-button {
+    position: static;
+    width: 100%;
+}
+
+.login-page .form-switch {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-page .footer .sub-button {
+    display: block;
+    padding: 15px 20px;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.login-page .footer .sub-button:focus {
+    border: none;
+}
+.auth-page .images-selector  .image-selector{
+    text-align: center;
+}
+.auth-page .images-selector  .image-selector img{
+    display: block;
+    margin: 6px auto;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    border: 2px solid #0f1464;
+    padding: 2px;
+}
+/* End Auth Page */
+/* Start Interests Page*/
+.interests-page {
+    padding: 20px;
+}
+
+.interests-page .content .title {
+    margin-bottom: 10px;
+}
+
+.interests-page .content .title h2 {
+    font-weight: bold;
+    font-size: 32px;
+    background: none;
+    margin-bottom: 0;
+}
+
+.interests-page .content .title p {
+    margin-bottom: 0;
+}
+
+.interests-page .interests .interest {
+    background-color: #005afa;
+    margin: 20px 0;
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+.interests-page .interests .interest,
+.interests-page .interests .interest .name {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+}
+.interests-page .interests .interest .name {
+    gap: 10px;
+}
+.interests-page .interests .interest .name p {
+    margin: auto;
+}
+
+.interests-page .interests .selected {
+    background-color: #00c864;
+}
+
+.interests-page .interests .interest .icon {
+    margin-right: 10px;
+}
+
+.interests-page .interests .interest .name img {
+    position: relative;
+    right: 2px;
+    top: 2px;
+}
+
+.interests-page .footer .main-button {
+    width: 160px;
+    margin: auto;
+}
+
+/* End Interests Page*/
+/* Start Gender Page*/
+.gender-page {
+    padding: 20px 45px;
+}
+
+.gender-page .title {
+    margin-bottom: 60px;
+}
+
+.gender-page h2 {
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.gender-page p {
+    color: #000;
+    font-size: 15px;
+}
+
+.gender-page .type {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #005afa;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.gender-page .type.selected {
+    background: #00c864;
+}
+
+.gender-page .main-button-s2 {
+    background: #8186d9;
+}
+
+/* End Gender Page*/
+/* Start Age Page*/
+.age-page {
+    padding: 20px 45px;
+}
+
+.age-page .title {
+    margin-bottom: 60px;
+}
+
+.age-page h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.age-page p {
+    color: #000;
+    font-size: 15px;
+    padding: 0px 40px;
+}
+
+.age-page .main-button-s2 {
+    background: #8186d9;
+}
+
+.age-page canvas {
+    width: 100% !important;
+    height: 345px !important;
+}
+
+.age-page .footer {
+    position: absolute;
+    bottom: 10px;
+}
+
+/* End Age Page*/
+/* Start Home Page*/
+.home-page {
+    padding: 0px 20px;
+}
+
+.home-page .title {
+    margin-bottom: 12px;
+}
+
+.home-page h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 8px 16px;
+}
+
+.guide {
+    border-radius: 20px;
+    background: #0f1464;
+    padding: 15px;
+    margin-bottom: 26px;
+}
+
+.home-page .guide h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.home-page .guide small {
+    color: #fff;
+}
+
+.home-page .icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.home-page .guide p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.home-page .guide a {
+    text-decoration: none;
+}
+
+.home-page .guide a span {
+    color: #fff;
+    font-size: 12px;
+    margin-inline-end: 8px;
+}
+
+.home-page .activites h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.32px;
+    margin-bottom: 12px;
+}
+
+.home-page .activites .activites_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.home-page .activity {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background-size: cover;
+    width: 108px;
+    height: 132px;
+    padding: 15px 10px;
+}
+
+.home-page .activity .img {
+    margin-bottom: 16px;
+}
+
+.home-page .activity h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 10px;
+    text-align: center;
+}
+
+.home-page .activity small {
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: -0.32px;
+}
+
+.home-page .agenda {
+    background-image: url("/web/images/agenda_bg.svg");
+}
+
+.home-page .challenges {
+    background-image: url("/web/images/challenges_bg.svg");
+}
+
+.home-page .map {
+    background-image: url("/web/images/map_bg.svg");
+}
+
+.home-page .leaderboard h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.32px;
+    margin-bottom: 12px;
+}
+
+.home-page .leaderboard_content {
+    position: relative;
+    height: 150px;
+    background: #0f1464;
+    margin-top: 110px;
+    border-radius: 20px;
+    padding: 0px 10px;
+    padding-top: 80px;
+    padding-bottom: 102px;
+    margin-bottom: 50px;
+}
+
+.home-page .arrangement {
+    width: 232px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    background: #e2e2e2;
+    position: absolute;
+    top: -25px;
+    left: 17%;
+}
+
+.home-page .arrange {
+    width: calc(100% / 3);
+    text-align: center;
+    margin-top: -25px;
+}
+
+.home-page .arrange.first {
+    border-radius: 30px 30px 0px 0px;
+    background: #363ebe;
+}
+
+.home-page .arrange.first .img {
+    margin-top: -35px;
+}
+
+.home-page .arrange .img {
+    position: relative;
+}
+
+.home-page .arrange .img img,
+.leaderboard-page .winner .img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #1e2237;
+}
+
+.home-page .arrange .img .leaderboard-no,
+.leaderboard-page .winner .leaderboard-no {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 8px;
+    position: absolute;
+    bottom: -5px;
+    left: 33px;
+}
+.leaderboard-page .winner .leaderboard-no {
+    left: 49px;
+}
+.home-page .arrange .img .leaderboard-no.no-1,
+.leaderboard-page .winner .leaderboard-no.no-1 {
+    background-color: #ffaa00;
+}
+.home-page .arrange .img .leaderboard-no.no-2,
+.leaderboard-page .winner .leaderboard-no.no-2 {
+    background-color: #009bd6;
+}
+.home-page .arrange .img .leaderboard-no.no-3,
+.leaderboard-page .winner .leaderboard-no.no-3 {
+    background-color: #00d95f;
+}
+
+.home-page .arrange.first .img img,
+.leaderboard-page .winner.first .img img {
+    border: 3px solid #ffaa00;
+}
+
+.home-page .arrange.second .img img,
+.leaderboard-page .winner.second .img img {
+    border: 3px solid #009bd6;
+}
+
+.home-page .arrange.third .img img,
+.leaderboard-page .winner.third .img img {
+    border: 3px solid #00d95f;
+}
+
+.home-page .arrange h5 {
+    color: #0f1464;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 5px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.home-page .arrange.first h5 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 12px;
+    line-height: 1;
+}
+
+.home-page .arrange span {
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.home-page .arrange span.second {
+    color: #009bd6;
+}
+
+.home-page .arrange.first span {
+    color: #fa0;
+}
+
+.home-page .arrange span.third {
+    color: #00d95f;
+}
+
+.home-page .leaderboard_content a {
+    color: #fff;
+    text-decoration: none;
+    gap: 8px;
+}
+
+/* End Home Page*/
+/* Start Agenda Page*/
+.agenda-page {
+    padding: 0px 24px;
+    overflow: hidden;
+}
+
+.agenda-page .main {
+    padding-bottom: 80px;
+}
+
+.agenda-page .title {
+    margin-bottom: 12px;
+}
+
+.agenda-page h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+.agenda-page .tags {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.agenda-page .tags::-webkit-scrollbar {
+    display: none;
+}
+
+.agenda-page .tags .tag {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 40px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    border-radius: 20.963px;
+    padding: 8px 18px;
+}
+.agenda-page .tags a{
+    color: #fff;
+    text-decoration: none;
+}
+.agenda-page .tags .tag.talk {
+    background: #005afa;
+}
+
+.agenda-page .tags .tag.networking {
+    background: #ff3264;
+}
+
+.agenda-page .tags .tag.workshops {
+    background: #00c864;
+}
+
+.agenda-page .events .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.agenda-page .events h3 {
+    color: #120d26;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 34px;
+    opacity: 0.84;
+    margin-bottom: 0;
+}
+
+.agenda-page .events a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 23px;
+    text-decoration: none;
+}
+
+.cardS1 {
+    border-radius: 18px;
+    padding: 8px;
+    background: #fff;
+    box-shadow: 0px 8px 30px 0px rgba(80, 85, 136, 0.06);
+}
+
+.cardS1 .head {
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.cardS1 .head .date {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(3px);
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #005afa;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.cardS1 .head .date span:first-of-type {
+    font-size: 17px;
+}
+
+.cardS1 .head .archive {
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(3px);
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: none;
+}
+
+.cardS1 .head .pic {
+    border-radius: 48px;
+    border: 1px solid #005afa;
+    z-index: 2;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.cardS1 h4 {
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cardS1 p {
+    color: #000;
+    font-size: 11px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.cardS1 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 22px;
+}
+
+.cardS1 ul li img {
+    margin-inline-end: 5px;
+}
+
+.cardS1 ul li span {
+    color: #2b2849;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.agenda-page .invite {
+    height: 132px;
+    background-image: url("/web/images/invite_bg.svg");
+    background-size: cover;
+    padding: 18px;
+    margin-bottom: 100px;
+}
+
+.agenda-page .invite h4 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 0;
+}
+
+.agenda-page .invite p {
+    color: #dcdcdc;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.agenda-page .invite button {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: #7f88e5;
+    border: none;
+    box-shadow: none;
+}
+.agenda-details-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-top: 20px;
+}
+.agenda-page .events .cardS1 .head .head-image{ 
+    display: block;
+    width: 222px;
+    height: 135px;
+    background-size: cover;
+    background-position: center;
+}
+.agenda-page .events .cardS1 .pic img{
+    max-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #005AFA;
+}
+/* End Agenda Page*/
+/* Start Challenges Page*/
+.challenges-page {
+    padding: 0px 24px;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.challenges-page .title {
+    margin-bottom: 12px;
+}
+
+.challenges-page h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+.challenges-page h3 {
+    margin-bottom: 16px;
+}
+
+.challenges-page .categories,
+.chats-page .categories {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.challenges-page .categories::-webkit-scrollbar,
+.chats-page .categories::-webkit-scrollbar {
+    display: none;
+}
+.challenges-page .categories a,
+.chats-page .categories a{
+    color: #000;
+    text-decoration: none;
+}
+.challenges-page .categories .category,
+.chats-page .categories .category {
+    min-width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    background: #f8f8f8;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 6px 16px;
+}
+
+.cardS2 {
+    border-radius: 18px;
+    padding: 8px;
+    background: #fff;
+    box-shadow: 10px -4px 30px 17px rgba(80, 85, 136, 0.06);
+    margin: 8px 5px;
+}
+.cardS2 .head {
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+.cardS2 .head img {
+    border-radius: 14px;
+    height: 100%;
+    width: 100%;
+}
+.cardS2 .head .fav {
+    width: 20px;
+    height: 20px;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(3px);
+    padding: 5px;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: none;
+}
+
+.cardS2 .head .fav img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cardS2 h4 {
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cardS2 p {
+    color: rgba(0, 0, 0, 0.64);
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.cardS2 .tags {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cardS2 .tags .counts,
+.cardS2 .tags .tag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #0f1464;
+    backdrop-filter: blur(16px);
+    color: #fff;
+    font-size: 11px;
+}
+
+/* End Challenges Page*/
+/* Start Profile Page*/
+.profile-page {
+    padding: 0px 32px;
+}
+
+.profile-page .user {
+    margin: 50px 0;
+    display: flex;
+    gap: 16px;
+}
+
+.profile-page .user h2 {
+    color: #000;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0.396px;
+    margin-bottom: 0;
+}
+
+.profile-page .user small {
+    color: #877777;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+.profile-page .user p {
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.profile-page .bars .bar {
+    margin-bottom: 32px;
+}
+
+.profile-page .bars .bar-wrraper {
+    height: 12px;
+    border-radius: 32px;
+    background: #d9d1c2;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.profile-page .bars .bar-inner {
+    height: 100%;
+    border-radius: 32px;
+}
+
+.profile-page .bars .bar:first-of-type .bar-inner {
+    background: #ffb801;
+}
+
+.profile-page .bars .bar:nth-of-type(2) .bar-inner {
+    background: #cc3737;
+}
+
+.profile-page .bars .bar:nth-of-type(3) .bar-inner {
+    background: #abbec5;
+}
+
+.profile-page .bars .bar .icon {
+    position: absolute;
+    right: -20px;
+    top: -15px;
+    z-index: 2;
+    width: 43px;
+    height: 43px;
+}
+
+.profile-page .bars .bar-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 200;
+    padding-inline-end: 42px;
+}
+
+.profile-page .collection {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.profile-page .link {
+    display: block;
+    width: 207px;
+    height: 59px;
+    border-radius: 19px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 16px;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 100px;
+}
+
+/* End Profile Page*/
+/* Start Settings Page*/
+.settings-page {
+    padding: 24px;
+}
+
+.settings-page .content {
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.settings-page .title {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+    margin-bottom: 20px;
+}
+
+.settings-page .title h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 0px;
+    margin-bottom: 0;
+}
+
+.settings-page .setting_box h3 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.settings-page .setting_box .list {
+    list-style: none;
+    border-radius: 6px;
+    background: #f5f5f5;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+}
+
+.settings-page .setting_box .list li:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.settings-page .setting_box .list li a {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* End Settings Page*/
+/* Start Challenge Page*/
+.challenge-page {
+    padding: 24px;
+}
+
+.challenge-page .title {
+    margin-bottom: 40px;
+}
+
+.challenge-page .img {
+    text-align: center;
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.challenge-page .img img {
+    max-width: 100%;
+    border-radius: 34px;
+}
+
+.challenge-page .img button {
+    background: transparent;
+    position: absolute;
+    bottom: -16px;
+    right: 16px;
+    border: none;
+    box-shadow: none;
+}
+
+.challenge-page h2 {
+    color: #242424;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.challenge-page .cards {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.challenge-page .cards .card {
+    width: 80px;
+    text-align: center;
+    padding: 16px 0px 14px 0px;
+    border-radius: 16px;
+    background: #f8f8f8;
+    border: none;
+}
+
+.challenge-page .cards .card h3 {
+    text-align: center;
+    color: #222;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.challenge-page .acceptBtn {
+    width: 327px;
+    height: 64px;
+    padding: 10px;
+    border-radius: 100px;
+    background: #0f1464;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.challenge-page .des {
+    position: relative;
+}
+
+.challenge-page .readMore {
+    display: none;
+    position: absolute;
+    right: 18px;
+    bottom: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+
+    align-items: center;
+    color: #ff678b;
+    font-size: 15px;
+    gap: 6px;
+}
+
+.challenge-page .readMore img {
+    margin-top: 4px;
+}
+
+.challenge-page .readMore.show {
+    display: flex;
+}
+
+/* End Challenge Page*/
+/* Start Statics Page*/
+.statics-page {
+    padding: 30px;
+}
+
+.statics-page  .main{
+    padding-bottom: 80px;
+}
+
+.statics-page .title {
+    margin-bottom: 40px;
+}
+
+.statics-page .box {
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 10px -4px 30px 17px rgba(80, 85, 136, 0.06);
+    padding: 22px 26px;
+    margin-bottom: 12px;
+}
+
+.statics-page .collection {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.statics-page .collection ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.statics-page .collection ul li {
+    width: 20px;
+    height: 20px;
+}
+
+.statics-page .collection ul li img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.statics-page .collection h4 {
+    color: #101010;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.statics-page .bars .bar:not(:last-of-type) {
+    margin-bottom: 25px;
+}
+
+.statics-page .bars .bar.smBar:not(:last-of-type) {
+    margin-bottom: 16px;
+}
+
+.statics-page .bars .bar h5 {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.statics-page .bars .bar-wrraper {
+    height: 12px;
+    border-radius: 32px;
+    background: #d9d1c2;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.statics-page .bars .bar.smBar .bar-wrraper {
+    margin-bottom: 4px;
+}
+
+.statics-page .bars .bar.smBar .bar-wrraper {
+    height: 9px;
+}
+
+.statics-page .bars .bar-inner {
+    height: 100%;
+    border-radius: 32px;
+}
+
+.statics-page .bars .bar:first-of-type .bar-inner {
+    background: #ffb801;
+}
+
+.statics-page .bars .bar:nth-of-type(2) .bar-inner {
+    background: #cc3737;
+}
+
+.statics-page .bars .bar:nth-of-type(3) .bar-inner {
+    background: #abbec5;
+}
+
+.statics-page .bars .bar .icon {
+    position: absolute;
+    right: -20px;
+    top: -15px;
+    z-index: 2;
+    width: 43px;
+    height: 43px;
+}
+
+.statics-page .bars .icon img {
+    max-width: 100%;
+}
+
+.statics-page .bars .bar.smBar .icon {
+    width: 35px;
+    height: 35px;
+    right: 0;
+}
+
+.statics-page .bars .bar-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 200;
+    padding-inline-end: 42px;
+}
+
+.statics-page .bars .bar.smBar .bar-info {
+    font-size: 9px;
+}
+
+.statics-page .box h3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.statics-page .box a {
+    padding: 14px 16px;
+    border-radius: 18px;
+    background: #f8f8f8;
+    color: #242424;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.statics-page .box .bars.anywhere {
+    position: relative;
+}
+
+.statics-page .box .bars.anywhere:after {
+    width: 0.5px;
+    height: 131px;
+    content: "";
+    position: absolute;
+    right: -13px;
+    top: 0;
+    background: #eaeaea;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Enc Statics Page*/
+/* Start leaderboard Page*/
+.leaderboard-page .title {
+    padding: 48px 24px;
+    display: flex;
+    align-items: center;
+    gap: 85px;
+}
+
+.leaderboard-page .title h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 0px;
+    margin-bottom: 0;
+}
+
+.leaderboard-page .nav {
+    border-bottom: none;
+    width: 342px;
+    height: 50px;
+    border-radius: 12px;
+    background: #f5f5f5;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.leaderboard-page .nav .nav-item button {
+    color: #0f1464;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.leaderboard-page .nav .nav-item button.active {
+    border: none;
+    background-color: transparent;
+    color: #0f1464;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.leaderboard-page .winners {
+    height: 113px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    background: #050736;
+    margin: 100px 24px 28px 24px;
+}
+
+.leaderboard-page .winner {
+    width: calc(100% / 3);
+    text-align: center;
+    margin-top: -25px;
+}
+
+.leaderboard-page .winner.first {
+    border-radius: 30px 30px 0px 0px;
+    background: #0f1464;
+}
+.leaderboard-page .winner .img {
+    position: relative;
+}
+.leaderboard-page .winner.first .img {
+    margin-top: -40px;
+}
+
+.leaderboard-page .winner h5 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 5px;
+    margin: 6px 0;
+    margin-top: 20px;
+}
+
+.leaderboard-page .winner.first h5 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.leaderboard-page .winner span {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.leaderboard-page .winner span.second {
+    color: #009bd6;
+}
+
+/* .leaderboard-page .winner.first span {
+    color: #fa0;
+} */
+
+.leaderboard-page .winner span.third {
+    color: #00d95f;
+}
+
+.leaderboard-page .winner small {
+    color: #b7b3b3;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.leaderboard-page .arrangement {
+    border-radius: 40px 40px 0px 0px;
+    background: #f5f5f5;
+    padding: 28px 25px 0px;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.leaderboard-page .arrangement li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+}
+
+.leaderboard-page .arrangement li:not(:last-of-type) {
+    padding-bottom: 35px;
+}
+
+.leaderboard-page .arrangement li .info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.leaderboard-page .arrangement li .info img {
+    width: 40px;
+    border-radius: 50%;
+}
+.leaderboard-page .arrangement li .info h6 {
+    color: #0f1464;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.leaderboard-page .arrangement li .info small {
+    color: #b7b3b3;
+    font-size: 8px;
+    font-weight: 300;
+}
+
+.leaderboard-page .arrangement li .num {
+    color: #0f1464;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* End leaderboard Page*/
+/* Start platform Page*/
+.platform-page {
+    padding: 20px;
+}
+
+.platform-page .title h2 {
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 52px 0px 26px;
+}
+
+.platform-page .title p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.platform-page .boxes .box {
+    min-height: 180px;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+.platform-page .boxes .box h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.platform-page .boxes .box p {
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.platform-page .boxes .col-6:first-of-type .box {
+    background: #00c864;
+}
+
+.platform-page .boxes .col-6:nth-of-type(2) .box {
+    background: #ff3264;
+}
+
+.platform-page .boxes .col-6:nth-of-type(3) .box {
+    background: #005afa;
+}
+
+.platform-page .boxes .col-6:nth-of-type(4) .box {
+    background: #0f1464;
+}
+
+/* End platform Page*/
+/* Start Chats Page*/
+.chats-page .search{
+    margin: 20px;
+}
+.chats-page .search .input-group{
+    height: 45px;
+    gap: 4px;
+}
+
+.chats-page .chats{
+    height: 600px;
+    overflow-y: auto;
+}
+.chats-page .chat {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 23px;
+    background: #fff;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.chats-page .chat .chat_info {
+    display: flex;
+    align-items: center;
+}
+
+.chats-page .chat .chat_avatar {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.08));
+}
+
+.chats-page .chat .chat_avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.chats-page .chat h3 {
+    color: #101828;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.chats-page .chat p {
+    color: #4f4f4f;
+    font-size: 12px;
+}
+
+.chats-page .chat .chat_status .chat_date {
+    color: #828282;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.chats-page .chat .chat_status .chat_date.new {
+    color: #161c75;
+}
+
+.chats-page .chat .chat_status .messages_count {
+    width: 15px;
+    height: 15px;
+    border-radius: 16px;
+    background: #13186d;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+    padding: 2px 6px;
+    color: #fff;
+    font-size: 8px;
+    font-weight: 600;
+    margin: 0 0 0 auto;
+}
+
+/* End Chats Page*/
+/* Start Chat Page*/
+.chat-page .chat {
+    height: 100vh;
+    border-radius: 40px;
+    background: #fff;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+}
+
+.chat-page .chat .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 24px -4px rgba(44, 44, 44, 0.08);
+    padding: 45px 20px 24px;
+}
+
+.chat-page .chat .contact .info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.chat-page .chat .contact .info .pic {
+    width: 64px;
+    height: 64px;
+}
+.chat-page .chat .contact .info .pic img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.chat-page .chat .contact .name {
+    color: #101828;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.chat-page .chat .contact .seen {
+    color: #475467;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.chat-page .chat button {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.chat-page .chat .messages {
+    height: calc(100vh - 180px);
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.chat-page .chat .messages .time {
+    color: #828282;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.chat-page .chat .messages .message {
+    width: 214px;
+    border-radius: 0px 20px 4px 20px;
+    background: #eaebfc;
+    color: #101828;
+    font-size: 16px;
+    padding: 20px 32px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.chat-page .chat .messages .message p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.chat-page .chat .messages .message.user {
+    margin-right: 0;
+    margin-left: auto;
+    border-radius: 20px 4px 4px 20px;
+    background: linear-gradient(to right, #11176a, #363ebe);
+    color: white;
+}
+
+.chat-page .chat .messages .message .sender {
+    position: absolute;
+    left: -4px;
+    top: -18px;
+}
+.chat-page .chat .messages .message .sender  img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.chat-page .chat .messages .message.user .sender {
+    right: -4px;
+    left: auto;
+}
+
+.chat-page .chat .messages .message .msg_status {
+    position: absolute;
+    bottom: 4px;
+    right: 8px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-page .chat .footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    border-radius: 32px 32px 0px 0px;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 16px;
+}
+
+.chat-page .chat .footer .input {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 34px;
+    background: #fff;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+    flex: 1;
+}
+
+.chat-page .chat .footer .input input,
+.chat-page .chat .footer .input input:focus {
+    border: none;
+    outline: none;
+    border-inline-start: 0.5px solid #a6a6a6;
+    padding: 0px 8px;
+}
+
+.chat-page .emojiTooltip {
+    inset: auto auto 0px 0px !important;
+    transform: translate3d(0px, -80px, 0px) !important;
+}
+
+.chat-page .emojiTooltip:not(.shown) {
+    display: none;
+}
+
+/* End Chat Page*/
+/* Start Map Page*/
+.map-page #map {
+    height: 100vh;
+}
+
+.gmnoprint {
+    bottom: 0;
+    top: auto !important;
+}
+
+.map-page #searchInput {
+    height: 48px;
+    width: 325px;
+    position: relative;
+    top: 80px !important;
+    left: 30px !important;
+    z-index: 10;
+    background: #fff;
+    border: none;
+    filter: drop-shadow(0px 5px 20px rgba(96, 100, 112, 0.1));
+    padding-inline-start: 40px;
+}
+
+.map-page #searchInput::placeholder {
+    font: 14px;
+    font-weight: 700;
+    color: #333;
+}
+
+.map-page .searchIcon {
+    position: absolute;
+    top: 89px;
+    z-index: 100;
+    left: 45px;
+}
+
+/* End Map Page*/
+/* Start Areas Page*/
+.areas-page {
+    padding: 0px 32px;
+}
+.areas-page .title img:lang(ar) {
+    transform: rotateY(180deg);
+}
+.areas-page .view {
+    height: 680px;
+    border-radius: 40px;
+    background: #01134b;
+    margin-top: 20px;
+    padding: 125px 20px;
+    margin-bottom: 100px;
+}
+
+.areas-page .view h3 {
+    height: 29px;
+    width: 105px;
+    background: #022bae;
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.areas-page .view ul {
+    list-style: none;
+    padding: 0;
+}
+
+.areas-page .view li {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.areas-page .view li .red,
+.areas-page .view li .orange,
+.areas-page .view li .green {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #ff4860;
+}
+
+.areas-page .view li .orange {
+    background: #ffab59;
+}
+
+.areas-page .view li .green {
+    background: #43ef63;
+}
+
+.areas-page .view .img img {
+    max-width: 100%;
+}
+
+/* End Areas Page*/
+/* Start Edit Profile Page */
+.edit-page .title {
+    margin-bottom: 40px;
+}
+.edit-page .title a{
+    display: block;
+    margin-bottom: 20px;
+}
+.edit-page .title h2 {
+    margin-bottom: 0;
+}
+/* End Edit Profile Page */

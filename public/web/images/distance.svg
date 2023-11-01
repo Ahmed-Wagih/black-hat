@@ -1,0 +1,12 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="distance" clip-path="url(#clip0_663_4832)">
+<rect id="Rectangle 41" width="36" height="36" rx="8" fill="white"/>
+<path id="Polygon 1" d="M16.4878 7.77647C17.3816 7.09756 18.6184 7.09756 19.5122 7.77647L26.485 13.0728C27.3225 13.7089 27.6723 14.8012 27.3602 15.8056L24.6438 24.5457C24.3189 25.5912 23.3514 26.3037 22.2565 26.3037H13.7435C12.6486 26.3037 11.6811 25.5912 11.3562 24.5457L8.63982 15.8056C8.32768 14.8012 8.6775 13.7089 9.51502 13.0728L16.4878 7.77647Z" fill="#FFB801" stroke="white"/>
+<path id="Vector 1" d="M18 9L11 14L15.5 16L18 14V9Z" fill="white" fill-opacity="0.68"/>
+</g>
+<defs>
+<clipPath id="clip0_663_4832">
+<rect width="36" height="36" fill="white"/>
+</clipPath>
+</defs>
+</svg>
