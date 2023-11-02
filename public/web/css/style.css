@@ -1366,6 +1366,7 @@ header .logo img {
     color: #fff;
     font-size: 20px;
     font-weight: 500;
+    border: none;
 }
 
 .challenge-page .des {

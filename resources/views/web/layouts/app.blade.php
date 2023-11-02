@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Ignite The game - @yield('page_title')</title>
+    <title> Black Hat - @yield('page_title')</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="description" content="Welcome to the engagement app for Ignite The game event use it now 🚀" />
