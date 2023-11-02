@@ -13,7 +13,7 @@
     </section>
 @endsection
 @push('scripts')
-<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDE9edvEd4aB5Lku2Uf86k2Tq2Nr-HyqTo&callback=initMap" async defer></script>
+
 <script>
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {

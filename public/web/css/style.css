@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&display=swap");
 
 :root {
-    --main-color: #0f1464;
-    --black-color: #192126;
+    --main-color: #5302D6;
+    --black-color: #000000;
     --gray-color: #19212650;
+    --button-background-color: #00DB96;
     --main-font-family: "Assistant", sans-serif;
 }
 
@@ -11,19 +12,20 @@ body {
     font-family: var(--main-font-family);
 }
 
-.logo {
+/* .logo {
     height: 80px;
     padding: 40px;
     margin-bottom: 10px;
-}
-.logo img{
-    width: 70%;
+} */
+header .logo img {
+    height: 58px;
+    margin: 20px auto;
 }
 
 .main-button {
     width: 160px;
     height: 38px;
-    background: var(--main-color);
+    background: var(--button-background-color);
     font-size: 16px;
     font-weight: 600;
     color: #fff;
@@ -48,9 +50,11 @@ body {
     margin: 0;
     padding: 0px 35px;
 }
+
 .navigation .navIcon {
     position: relative;
 }
+
 .navigation .navIcon .messages-number {
     text-decoration: none;
     position: absolute;
@@ -65,6 +69,7 @@ body {
     top: -3px;
     left: 23px;
 }
+
 .search .input-group-text {
     height: 38px;
     border: none;
@@ -157,10 +162,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-}
-
-.onboarding-page .splash .logo {
-    padding-top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .onboarding-page .splash .page-footer {
@@ -176,6 +180,7 @@ body {
 .onboarding-page .main .content {
     text-align: center;
     position: relative;
+    margin-top: 120px;
 }
 
 .onboarding-page .main .content img {
@@ -219,7 +224,11 @@ body {
 .welcome-page .main .footer .main-button {
     display: block;
     margin: 15px;
+    height: 60px;
     width: -webkit-fill-available;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.8;
 }
 
 .welcome-page .main .footer .sub-button {
@@ -232,7 +241,7 @@ body {
 }
 
 .welcome-page .main .footer .sub-button span {
-    color: var(--main-color);
+    color: var(--black-color);
     font-weight: 600;
 }
 
@@ -280,9 +289,15 @@ body {
 
 .auth-page .main-button {
     position: relative;
-    left: 30%;
-    width: 160px;
     font-size: 16px;
+    margin: auto;
+    display: block;
+}
+
+.auth-page.login-page .main-button {
+    position: relative;
+    font-size: 16px;
+
 }
 
 .login-page form .main-button {
@@ -295,8 +310,14 @@ body {
     justify-content: flex-end;
 }
 
+.login-page .footer {
+    position: absolute;
+    bottom: 42px;
+    text-align: center;
+    width: -webkit-fill-available;
+}
+
 .login-page .footer .sub-button {
-    display: block;
     padding: 15px 20px;
     border: 1px solid #707070;
     border-radius: 15px;
@@ -307,10 +328,12 @@ body {
 .login-page .footer .sub-button:focus {
     border: none;
 }
-.auth-page .images-selector  .image-selector{
+
+.auth-page .images-selector .image-selector {
     text-align: center;
 }
-.auth-page .images-selector  .image-selector img{
+
+.auth-page .images-selector .image-selector img {
     display: block;
     margin: 6px auto;
     border-radius: 50%;
@@ -320,6 +343,7 @@ body {
     border: 2px solid #0f1464;
     padding: 2px;
 }
+
 /* End Auth Page */
 /* Start Interests Page*/
 .interests-page {
@@ -342,7 +366,7 @@ body {
 }
 
 .interests-page .interests .interest {
-    background-color: #005afa;
+    background-color: var(--black-color);
     margin: 20px 0;
     padding: 10px 20px;
     width: fit-content;
@@ -355,15 +379,17 @@ body {
     border-radius: 10px;
     color: #fff;
 }
+
 .interests-page .interests .interest .name {
     gap: 10px;
 }
+
 .interests-page .interests .interest .name p {
     margin: auto;
 }
 
 .interests-page .interests .selected {
-    background-color: #00c864;
+    background-color: #5302D6;
 }
 
 .interests-page .interests .interest .icon {
@@ -480,7 +506,7 @@ body {
 
 .guide {
     border-radius: 20px;
-    background: #0f1464;
+    background: var(--black-color);
     padding: 15px;
     margin-bottom: 26px;
 }
@@ -548,10 +574,20 @@ body {
     width: 108px;
     height: 132px;
     padding: 15px 10px;
+    background: #DDDDDD;
+    border-radius: 20px;
+
 }
 
 .home-page .activity .img {
-    margin-bottom: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px auto 10px;
 }
 
 .home-page .activity h4 {
@@ -569,18 +605,6 @@ body {
     letter-spacing: -0.32px;
 }
 
-.home-page .agenda {
-    background-image: url("/web/images/agenda_bg.svg");
-}
-
-.home-page .challenges {
-    background-image: url("/web/images/challenges_bg.svg");
-}
-
-.home-page .map {
-    background-image: url("/web/images/map_bg.svg");
-}
-
 .home-page .leaderboard h3 {
     font-size: 16px;
     font-weight: 700;
@@ -592,7 +616,7 @@ body {
 .home-page .leaderboard_content {
     position: relative;
     height: 150px;
-    background: #0f1464;
+    background: #616161AD;
     margin-top: 110px;
     border-radius: 20px;
     padding: 0px 10px;
@@ -608,7 +632,7 @@ body {
     display: flex;
     justify-content: center;
     border-radius: 12px;
-    background: #e2e2e2;
+    background: #4D4D4D;
     position: absolute;
     top: -25px;
     left: 17%;
@@ -622,7 +646,7 @@ body {
 
 .home-page .arrange.first {
     border-radius: 30px 30px 0px 0px;
-    background: #363ebe;
+    background: var(--black-color);
 }
 
 .home-page .arrange.first .img {
@@ -653,17 +677,21 @@ body {
     bottom: -5px;
     left: 33px;
 }
+
 .leaderboard-page .winner .leaderboard-no {
     left: 49px;
 }
+
 .home-page .arrange .img .leaderboard-no.no-1,
 .leaderboard-page .winner .leaderboard-no.no-1 {
     background-color: #ffaa00;
 }
+
 .home-page .arrange .img .leaderboard-no.no-2,
 .leaderboard-page .winner .leaderboard-no.no-2 {
     background-color: #009bd6;
 }
+
 .home-page .arrange .img .leaderboard-no.no-3,
 .leaderboard-page .winner .leaderboard-no.no-3 {
     background-color: #00d95f;
@@ -685,7 +713,7 @@ body {
 }
 
 .home-page .arrange h5 {
-    color: #0f1464;
+    color: #fff;
     text-align: center;
     font-size: 8px;
     font-weight: 500;
@@ -712,7 +740,7 @@ body {
 }
 
 .home-page .arrange.first span {
-    color: #fa0;
+    color: #8444EC;
 }
 
 .home-page .arrange span.third {
@@ -759,6 +787,7 @@ body {
     display: none;
 }
 
+
 .agenda-page .tags .tag {
     display: flex;
     align-items: center;
@@ -771,11 +800,18 @@ body {
     letter-spacing: -0.408px;
     border-radius: 20.963px;
     padding: 8px 18px;
+    background-color: #4FF4FF;
 }
-.agenda-page .tags a{
+
+.agenda-page .tags .tag.active {
+    background-color: #5302D6;
+}
+
+.agenda-page .tags a {
     color: #fff;
     text-decoration: none;
 }
+
 .agenda-page .tags .tag.talk {
     background: #005afa;
 }
@@ -940,30 +976,34 @@ body {
     text-transform: uppercase;
     padding: 5px 20px;
     border-radius: 5px;
-    background: #7f88e5;
+    background: #000;
     border: none;
     box-shadow: none;
 }
-.agenda-details-list{
+
+.agenda-details-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
     margin-top: 20px;
 }
-.agenda-page .events .cardS1 .head .head-image{ 
+
+.agenda-page .events .cardS1 .head .head-image {
     display: block;
     width: 222px;
     height: 135px;
     background-size: cover;
     background-position: center;
 }
-.agenda-page .events .cardS1 .pic img{
+
+.agenda-page .events .cardS1 .pic img {
     max-width: 48px;
     height: 48px;
     border-radius: 50%;
     border: 1px solid #005AFA;
 }
+
 /* End Agenda Page*/
 /* Start Challenges Page*/
 .challenges-page {
@@ -1000,11 +1040,13 @@ body {
 .chats-page .categories::-webkit-scrollbar {
     display: none;
 }
+
 .challenges-page .categories a,
-.chats-page .categories a{
+.chats-page .categories a {
     color: #000;
     text-decoration: none;
 }
+
 .challenges-page .categories .category,
 .chats-page .categories .category {
     min-width: max-content;
@@ -1025,17 +1067,20 @@ body {
     box-shadow: 10px -4px 30px 17px rgba(80, 85, 136, 0.06);
     margin: 8px 5px;
 }
+
 .cardS2 .head {
     height: 120px;
     overflow: hidden;
     position: relative;
     margin-bottom: 30px;
 }
+
 .cardS2 .head img {
     border-radius: 14px;
     height: 100%;
     width: 100%;
 }
+
 .cardS2 .head .fav {
     width: 20px;
     height: 20px;
@@ -1086,9 +1131,9 @@ body {
     width: fit-content;
     padding: 5px 10px;
     border-radius: 20px;
-    background: #0f1464;
+    background: #4FF4FF;
     backdrop-filter: blur(16px);
-    color: #fff;
+    color: #000;
     font-size: 11px;
 }
 
@@ -1144,15 +1189,15 @@ body {
 }
 
 .profile-page .bars .bar:first-of-type .bar-inner {
-    background: #ffb801;
+    background: #5302D6;
 }
 
 .profile-page .bars .bar:nth-of-type(2) .bar-inner {
-    background: #cc3737;
+    background: #4C4C4C;
 }
 
 .profile-page .bars .bar:nth-of-type(3) .bar-inner {
-    background: #abbec5;
+    background: #4FF4FF;
 }
 
 .profile-page .bars .bar .icon {
@@ -1317,7 +1362,7 @@ body {
     height: 64px;
     padding: 10px;
     border-radius: 100px;
-    background: #0f1464;
+    background: var(--button-background-color);
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -1356,7 +1401,7 @@ body {
     padding: 30px;
 }
 
-.statics-page  .main{
+.statics-page .main {
     padding-bottom: 80px;
 }
 
@@ -1438,28 +1483,33 @@ body {
 }
 
 .statics-page .bars .bar:first-of-type .bar-inner {
-    background: #ffb801;
+    background: #4C4C4C;
 }
 
 .statics-page .bars .bar:nth-of-type(2) .bar-inner {
-    background: #cc3737;
+    background: #50F2FD;
 }
 
 .statics-page .bars .bar:nth-of-type(3) .bar-inner {
-    background: #abbec5;
+    background: #5303D5;
 }
 
 .statics-page .bars .bar .icon {
     position: absolute;
     right: -20px;
-    top: -15px;
+    top: -13px;
     z-index: 2;
-    width: 43px;
-    height: 43px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    background: #fff;
 }
 
 .statics-page .bars .icon img {
     max-width: 100%;
+    margin: auto;
 }
 
 .statics-page .bars .bar.smBar .icon {
@@ -1571,10 +1621,19 @@ body {
 .leaderboard-page .winner.first {
     border-radius: 30px 30px 0px 0px;
     background: #0f1464;
+    position: relative;
 }
+
+.leaderboard-page .winner.first .crown {
+    position: absolute;
+    top: -80px;
+    left: 40px;
+}
+
 .leaderboard-page .winner .img {
     position: relative;
 }
+
 .leaderboard-page .winner.first .img {
     margin-top: -40px;
 }
@@ -1646,10 +1705,12 @@ body {
     gap: 20px;
     align-items: center;
 }
+
 .leaderboard-page .arrangement li .info img {
     width: 40px;
     border-radius: 50%;
 }
+
 .leaderboard-page .arrangement li .info h6 {
     color: #0f1464;
     font-size: 12px;
@@ -1732,18 +1793,20 @@ body {
 
 /* End platform Page*/
 /* Start Chats Page*/
-.chats-page .search{
+.chats-page .search {
     margin: 20px;
 }
-.chats-page .search .input-group{
+
+.chats-page .search .input-group {
     height: 45px;
     gap: 4px;
 }
 
-.chats-page .chats{
+.chats-page .chats {
     height: 600px;
     overflow-y: auto;
 }
+
 .chats-page .chat {
     display: flex;
     justify-content: space-between;
@@ -1834,11 +1897,13 @@ body {
     width: 64px;
     height: 64px;
 }
-.chat-page .chat .contact .info .pic img{
+
+.chat-page .chat .contact .info .pic img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
+
 .chat-page .chat .contact .name {
     color: #101828;
     font-size: 16px;
@@ -1901,12 +1966,14 @@ body {
     left: -4px;
     top: -18px;
 }
-.chat-page .chat .messages .message .sender  img{
+
+.chat-page .chat .messages .message .sender img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     border: 3px solid #fff;
 }
+
 .chat-page .chat .messages .message.user .sender {
     right: -4px;
     left: auto;
@@ -2001,67 +2068,51 @@ body {
 
 /* End Map Page*/
 /* Start Areas Page*/
-.areas-page {
-    padding: 0px 32px;
+.areas-page .title {
+    padding-left: 20px;
 }
-.areas-page .title img:lang(ar) {
-    transform: rotateY(180deg);
-}
-.areas-page .view {
-    height: 680px;
+
+.areas-page .map {
+    width: 322px;
+    background: #868686;
     border-radius: 40px;
-    background: #01134b;
-    margin-top: 20px;
-    padding: 125px 20px;
-    margin-bottom: 100px;
-}
-
-.areas-page .view h3 {
-    height: 29px;
-    width: 105px;
-    background: #022bae;
-    text-align: center;
-    padding: 8px 12px;
+    margin: 50px auto 130px;
     font-size: 12px;
-    font-weight: 900;
-    color: #fff;
-    margin-bottom: 8px;
+    padding-bottom: 20px;
 }
 
-.areas-page .view ul {
+
+.areas-page .map .head {
+    padding: 75px 20px 0;
+}
+
+.areas-page .map .head .box {
+    width: 104px;
+    height: 29px;
+    background-color: #00FFD6;
+    text-align: center;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.areas-page .map .head ul {
     list-style: none;
+    margin: 10px 0;
     padding: 0;
 }
 
-.areas-page .view li {
+.areas-page .map .head ul li {
     color: #fff;
-    font-size: 10px;
-    font-weight: 500;
-    margin-bottom: 6px;
-    display: flex;
-    align-items: center;
-    gap: 2px;
 }
 
-.areas-page .view li .red,
-.areas-page .view li .orange,
-.areas-page .view li .green {
-    display: block;
+.areas-page .map .head ul li span {
+    display: inline-block;
     width: 10px;
     height: 10px;
-    background: #ff4860;
 }
 
-.areas-page .view li .orange {
-    background: #ffab59;
-}
-
-.areas-page .view li .green {
-    background: #43ef63;
-}
-
-.areas-page .view .img img {
-    max-width: 100%;
+.areas-page .map .foot img {
+    width: -webkit-fill-available;
 }
 
 /* End Areas Page*/
@@ -2069,11 +2120,14 @@ body {
 .edit-page .title {
     margin-bottom: 40px;
 }
-.edit-page .title a{
+
+.edit-page .title a {
     display: block;
     margin-bottom: 20px;
 }
+
 .edit-page .title h2 {
     margin-bottom: 0;
 }
+
 /* End Edit Profile Page */

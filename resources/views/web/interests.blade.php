@@ -14,7 +14,7 @@
                             <span class="input-group-text" id="basic-addon1"><i
                                     class="fa-solid fa-magnifying-glass"></i></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="@lang('admin.search')" aria-label="Search"
+                        <input id="interestsSearchInput" type="text" class="form-control" placeholder="@lang('admin.search')" aria-label="Search"
                             aria-describedby="basic-addon1">
                     </div>
                 </div>
@@ -59,4 +59,41 @@
             });
         });
     </script>
+
+<script>
+    $(document).ready(function() {
+
+        $('#interestsSearchInput').keyup(function() {
+            let search = $(this).val();
+
+            let url = "{{ route('web.interests.search') }}";
+            let form = $(this);
+            let formData = new FormData();
+            let token = "{{ csrf_token() }}";
+            formData.append('search', search);
+            formData.append('_token', token);
+
+
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    var searchResult = $('.interests');
+                    searchResult.html(response);
+                },
+                error: function(xhr, status, error) {
+                    // Error handler
+                    console.log('Request failed!');
+                    console.log('Status: ' + status);
+                    console.log('Error: ' + error);
+                    // Add your code to handle the error here
+                }
+            });
+        });
+    });
+</script>
+
 @endpush

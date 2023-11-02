@@ -38,12 +38,22 @@ Route::group(
             Route::post('register', 'register')->name('register');
             Route::get('interests', 'interests')->name('interests');
             Route::post('interests', 'storeInterests')->name('interests');
+            Route::post('interests-search', 'interestsSearch')->name('interests.search');
             Route::get('gender', 'gender')->name('gender');
             Route::post('gender', 'storeGender')->name('gender');
             Route::get('age', 'age')->name('age');
             Route::post('age', 'storeAge')->name('age');
         });
 
+        Route::group(['as' => 'web.'], function () {
+            Route::get('/', function () {
+                return view('web.index');
+            })->name('index');
+            
+            Route::get('/welcome', function () {
+                return view('web.welcome');
+            })->name('welcome');
+        });
         Route::group(['middleware' => ['auth:web'], 'as' => 'web.'], function () {
             Route::controller(AuthController::class)->group(function () {
                 Route::get('logout', 'logout')->name('logout');
@@ -97,14 +107,6 @@ Route::group(
             Route::get('/map', function () {
                 return view('web.areas');
             })->name('map');
-
-            Route::get('/', function () {
-                return view('web.index');
-            })->name('index');
-            
-            Route::get('/welcome', function () {
-                return view('web.welcome');
-            })->name('welcome');
 
             Route::get('/scan-qr-code', function () {
                 return view('web.scan_qrcode');

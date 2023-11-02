@@ -20,6 +20,7 @@ class LeaderboardController extends Controller
         $thirdUser = $topUsers->skip(2)->first();
         $remainingUsers = User::orderBy('experience_points', 'desc')
         ->whereNotIn('id', $topUserIds)
+        ->limit(50)
         ->get();
         return view('web.leaderboard',compact('firstUser','secondUser','thirdUser','remainingUsers'));
 

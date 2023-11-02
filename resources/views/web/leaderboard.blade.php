@@ -26,6 +26,7 @@
                             @endif
                             @if (isset($firstUser) && $firstUser->experience_points > 0)
                                 <div class="winner first">
+                                    <img class="crown" src="{{ asset('web/images/crown.svg') }}" alt="">
                                     <div class="img">
                                         <img src="{{$firstUser->profile_image != null ? getImage('Users', $firstUser->profile_image) : asset('web/images/icons8-gamer-64.png') }}" alt="" />
                                         <span class="leaderboard-no no-1">1</span>

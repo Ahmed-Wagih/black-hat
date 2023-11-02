@@ -69,7 +69,7 @@
 <body style="min-height: 100vh;" onload="init()">
     <header class="text-center">
         <div class="logo">
-            <img class="img-fluid" src="{{ asset('web/images/logo-w.png') }}" alt="">
+            <img class="img-fluid" src="{{ asset('web/images/black-hat-dark-logo.svg') }}" alt="">
         </div>
     </header>
 

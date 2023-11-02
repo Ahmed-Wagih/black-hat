@@ -22,7 +22,7 @@
                             <div class="bar-wrraper">
                                 <div class="bar-inner"
                                     style="width:{{ ceil((auth()->user()->experience_points / 10000) * 100) }}%"></div>
-                                <div class="icon">
+                                <div class="icon" style="border-color: #000">
                                     <img src="{{ asset('web/images/experience.svg') }}" alt="" />
                                 </div>
                             </div>
@@ -36,7 +36,7 @@
                             <div class="bar-wrraper">
                                 <div class="bar-inner"
                                     style="width:{{ ceil((auth()->user()->health_bar / 10000) * 100) }}%"></div>
-                                <div class="icon">
+                                <div class="icon" style="border-color: #50F2FD">
                                     <img src="{{ asset('web/images/chest.svg') }}" alt="" />
                                 </div>
                             </div>
@@ -50,7 +50,7 @@
                             <div class="bar-wrraper">
                                 <div class="bar-inner" style="width:{{ ceil((auth()->user()->mena_bar / 10000) * 100) }}%">
                                 </div>
-                                <div class="icon">
+                                <div class="icon"  style="border-color: #5303D5">
                                     <img src="{{ asset('web/images/mana.svg') }}" alt="" />
                                 </div>
                             </div>
@@ -70,7 +70,7 @@
                                 <h5>@lang('admin.Level') 1</h5>
                                 <div class="bar-wrraper">
                                     <div class="bar-inner" style="width:75%"></div>
-                                    <div class="icon smIcon">
+                                    <div class="icon smIcon" style="border-color: #000">
                                         <img src="{{ asset('web/images/experience.svg') }}" alt="" />
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@
                             <div class="bar smBar">
                                 <div class="bar-wrraper">
                                     <div class="bar-inner" style="width:45%"></div>
-                                    <div class="icon smIcon">
+                                    <div class="icon smIcon" style="border-color: #50F2FD">
                                         <img src="{{ asset('web/images/chest.svg') }}" alt="" />
                                     </div>
                                 </div>
@@ -94,7 +94,7 @@
                             <div class="bar smBar">
                                 <div class="bar-wrraper">
                                     <div class="bar-inner smIcon" style="width:45%"></div>
-                                    <div class="icon smIcon">
+                                    <div class="icon smIcon" style="border-color: #5303D5">
                                         <img src="{{ asset('web/images/mana.svg') }}" alt="" />
                                     </div>
                                 </div>
@@ -112,7 +112,7 @@
                                 <h5>@lang('admin.Level') 1</h5>
                                 <div class="bar-wrraper">
                                     <div class="bar-inner" style="width:75%"></div>
-                                    <div class="icon smIcon">
+                                    <div class="icon smIcon" style="border-color: #000">
                                         <img src="{{ asset('web/images/experience.svg') }}" alt="" />
                                     </div>
                                 </div>
@@ -124,7 +124,7 @@
                             <div class="bar smBar">
                                 <div class="bar-wrraper">
                                     <div class="bar-inner" style="width:80%"></div>
-                                    <div class="icon smIcon">
+                                    <div class="icon smIcon" style="border-color: #50F2FD">
                                         <img src="{{ asset('web/images/chest.svg') }}" alt="" />
                                     </div>
                                 </div>
@@ -136,7 +136,7 @@
                             <div class="bar smBar">
                                 <div class="bar-wrraper">
                                     <div class="bar-inner" style="width:80%"></div>
-                                    <div class="icon smIcon">
+                                    <div class="icon smIcon" style="border-color: #5303D5">
                                         <img src="{{ asset('web/images/mana.svg') }}" alt="" />
                                     </div>
                                 </div>

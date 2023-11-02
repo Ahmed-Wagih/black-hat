@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
+use App\Models\Interest;
 use App\Models\User;
 use App\Services\Classes\InterestService;
 use Illuminate\Support\Facades\Artisan;
@@ -73,6 +74,16 @@ class AuthController extends Controller
     {
         $interests = $this->interestService->findBy(request());
         return view('web.interests', get_defined_vars());
+    }
+
+    public function interestsSearch(Request $request)
+    {
+        if ($request->search) {
+            $interests = Interest::where('name_ar', 'like', '%' . $request->search . '%')->orWhere('name_en', 'like', '%' . $request->search . '%')->get();
+            return view('web.compoonents.interest_search', get_defined_vars());
+        }
+        $interests = Interest::all();
+        return view('web.compoonents.interest_search', get_defined_vars());
     }
 
     public function storeInterests(Request $request)

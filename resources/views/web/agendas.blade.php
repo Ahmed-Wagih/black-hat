@@ -28,7 +28,7 @@
                         </a>
                         @foreach ($categories as $category)
                             <a href="{{ route('web.agenda.index', ['category_id' => $category->id]) }}">
-                                <div class="tag" style="background: {{ $category->background }}">
+                                <div class="tag {{ request()->category_id &&  request()->category_id == $category->id ? 'active' : '' }}">
                                     <img src="{{ getImage('Categories', $category->icon) }}" alt="" />
                                     <span>{{ LaravelLocalization::getCurrentLocale() == 'ar' ? $category->name_ar : $category->name_en }}</span>
                                 </div>
