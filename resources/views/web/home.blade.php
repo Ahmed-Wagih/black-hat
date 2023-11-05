@@ -21,20 +21,22 @@
                 </div>
 
                 <div class="guide">
-                  <div class="d-flex justify-content-between mb-4">
-                     <div>
-                        <h3>{{ __('GAME MANUAL') }}</h3>
-                        <small>{{ __('Ignite your sense of adventure!') }}</small>
+                  <div class="background-image">
+                    <div class="d-flex justify-content-between mb-4">
+                        <div>
+                           <h3>{{ __('GAME MANUAL') }}</h3>
+                           <small>{{ __('Ignite your sense of adventure!') }}</small>
+                       </div>
+                       <div class="icon"><img src="{{ asset('web/images/trophy.svg') }}" alt="" /></div>
+                     </div>
+                     <div class="d-flex justify-content-between">
+                       <p>@lang('admin.p-THE-GAME')</p>
+                       <a class="d-flex align-items-center" href="{{ route('web.statics') }}">
+                           <span>@lang('admin.view-all')</span>
+                          <img src="{{ asset('web/images/arrow.svg') }}" alt="" />
+                        </a>
                     </div>
-                    <div class="icon"><img src="{{ asset('web/images/trophy.svg') }}" alt="" /></div>
                   </div>
-                  <div class="d-flex justify-content-between">
-                    <p>@lang('admin.p-THE-GAME')</p>
-                    <a class="d-flex align-items-center" href="{{ route('web.statics') }}">
-                        <span>@lang('admin.view-all')</span>
-                       <img src="{{ asset('web/images/arrow.svg') }}" alt="" />
-                     </a>
-                 </div>
                 </div>
 
                 <div class="activites">
@@ -44,7 +46,7 @@
                             <div class="img">
                                 <img src="{{ asset('web/images/agenda.svg') }}" alt="" />
                             </div>
-                            <h4>@lang('admin.Agenda')</h4>
+                            <h4>{{ __('Events') }}</h4>
                             <small>@lang('admin.Browse-the-agenda')</small>
                         </a>
                         <a href="{{route('web.challenges.index')}}"  class="activity challenges">

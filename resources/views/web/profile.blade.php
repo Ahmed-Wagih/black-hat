@@ -2,6 +2,7 @@
 @section('page_title','Profile')
 @section('content')
     <section class="profile-page">
+        <div class="title"> <a href="{{ route('web.home') }}"><img src="{{ asset('web/images/back.svg') }}"alt="" /></a></div>
         <div class="main">
             <div class="content">
                 <div class="user">

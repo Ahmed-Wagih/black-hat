@@ -17,45 +17,40 @@ class InterestSeeder extends Seeder
 
         $datas = [
             [
-                'name_ar' => 'النشر والتسويق',
-                'name_en' => 'Publishing & Marketing',
-                'icon' => 'publishing-and-markiting.svg'
+                'name_ar' => 'هاكر اخلاقي',
+                'name_en' => 'Ethical Hacker',
+                'icon' => 'Ethical-Hacker.svg'
             ],
             [
-                'name_ar' => 'تطوير وتصميم اللعبة',
-                'name_en' => 'Game Development & Design',
-                'icon' => 'gane-development.svg'
+                'name_ar' => 'التحديات التقنية',
+                'name_en' => 'Technical Challenges',
+                'icon' => 'Technical-challenges.svg'
 
 
             ],
             [
-                'name_ar' => 'إنشاء المحتوى والبث',
-                'name_en' => 'Content Creation & Streaming',
-                'icon' => 'Content Creation & Streaming.svg'
+                'name_ar' => 'الوعي السيبراني',
+                'name_en' => 'Cyber Awareness',
+                'icon' => 'Cyber-Awareness.svg'
 
             ],
 
             [
-                'name_ar' => 'الاستثمار وريادة الأعمال',
-                'name_en' => 'Investment & Entrepreneurship',
-                'icon' => 'Investment & Entrepreneurship.svg'
+                'name_ar' => 'التعاون الدولي',
+                'name_en' => 'International Cooperation',
+                'icon' => 'International-Cooperation.svg'
 
             ],
             [
-                'name_ar' => 'مجتمع الألعاب والثقافة',
-                'name_en' => 'Gaming Community & Culture',
-                'icon' => 'Gaming Community & Culture.svg'
+                'name_ar' => 'الحماية الشخصية',
+                'name_en' => 'Personal protection',
+                'icon' => 'Personal-protection.svg'
 
             ],
             [
-                'name_ar' => 'الألعاب الرياضية والتنافسية',
-                'name_en' => 'Sports & Competitive Gaming',
-                'icon' => 'Sports & Competitive Gaming.svg'
-            ],
-            [
-                'name_ar' => 'تطوير الاعمال',
-                'name_en' => 'Business Development',
-                'icon' => 'Business Development.svg'
+                'name_ar' => 'تقنيات الصحة الرقمية',
+                'name_en' => 'Digital Health Technologies',
+                'icon' => 'Digital-Health-Technologies.svg'
 
             ],
 

@@ -400,6 +400,7 @@ header .logo img {
     position: relative;
     right: 2px;
     top: 2px;
+    width: 20px;
 }
 
 .interests-page .footer .main-button {
@@ -510,7 +511,11 @@ header .logo img {
     padding: 15px;
     margin-bottom: 26px;
 }
-
+.guide .background-image{
+    background-image: url("/web/images/blackhatmea-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
 .home-page .guide h3 {
     font-size: 18px;
     font-weight: 600;
